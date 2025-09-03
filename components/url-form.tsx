@@ -6,8 +6,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { Label } from "~/components/ui/label";
-import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
-import { Link as LinkIcon } from "lucide-react";
+import { Card, CardContent } from "~/components/ui/card";
 import Link from "next/link";
 
 const UrlSchema = z.object({
@@ -40,13 +39,7 @@ export function UrlForm() {
   ] as const;
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <LinkIcon className="size-5" aria-hidden />
-          Convert URL
-        </CardTitle>
-      </CardHeader>
+    <Card className="border-none bg-transparent">
       <CardContent>
         <form
           onSubmit={handleConvert}

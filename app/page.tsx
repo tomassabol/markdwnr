@@ -9,7 +9,7 @@ export default function Home() {
             Supercharge note-taking and citations
           </p>
           <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">
-            Turn any website into{" "}
+            Turn any website into LLM-friendly{" "}
             <span className="bg-gradient-to-r from-foreground to-neutral-400 bg-clip-text text-transparent">
               Markdown
             </span>
